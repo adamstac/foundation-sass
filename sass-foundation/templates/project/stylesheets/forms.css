@@ -75,5 +75,5 @@ form.custom div.custom.dropdown a.selector ul li.selected { background: url('../
 form.custom div.custom.dropdown a.selector ul li.selected:hover { background: url('../images/misc/custom-form-sprites.png?1299474407') #00a6fc right -78px no-repeat; }
 form.custom div.custom.dropdown a.selector ul li:hover { background-color: #00a6fc; color: white; }
 form.custom div.custom.dropdown:hover a.selector { background-position: -14px -26px; }
-form.custom div.custom.dropdown.open { display: block; }
+form.custom div.custom.dropdown.open ul { display: block; }
 form.custom div.custom.dropdown.open a.selector { background-position: -14px -26px; }
