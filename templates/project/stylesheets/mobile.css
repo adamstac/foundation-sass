@@ -1,22 +1,13 @@
-/* --------------------------------- */
-/*   Grid                            */
-/* --------------------------------- */
-/*                                   */
-/* Tablet Screens */
-@media only screen and (device-width: 768px), (device-width: 880px) { /* Currently unused */ }
+/* Mobile Grid Fixes */
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; }
   .row, body, .container { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
   .row .row .column, .row .row .columns { padding: 0; }
-  .column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; padding-left: 20px; padding-left: 20px; }
+  .column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; padding-left: 20px; padding-right: 20px; }
   .column:last-child, .columns:last-child { margin-right: 0; }
   .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten, .offset-by-eleven { margin-left: 0% !important; } }
-/* --------------------------------- */
-/*   Block Grid                      */
-/* --------------------------------- */
+/* Block Grid */
 @media only screen and (max-width: 767px) { .block-grid.mobile li { float: none; width: 100%; } }
-/* --------------------------------- */
-/*   Mobile Visibility Affordances   */
-/* --------------------------------- */
+/* Mobile Visibility Affordances */
 .show-on-phones { display: none !important; }
 
 .show-on-tablet { display: none !important; }
@@ -41,16 +32,11 @@
   .hide-on-phones { display: block !important; }
   .hide-on-tablet { display: none !important; }
   .hide-on-desktop { display: none !important; } }
-/* --------------------------------- */
-/*   Forms                           */
-/* --------------------------------- */
+/* Forms */
 @media only screen and (max-width: 767px) { input.input-text, input.input-text.oversize, textarea, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 96%; padding: 6px 2% 4px; font-size: 18px; font-size: 1.8rem; }
   form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
   form.nice small.error { padding: 6px 2%; display: block; }
   form.nice .small + .error, form.nice .medium + .error, form.nice .large + .error { width: auto; } }
-/* --------------------------------- */
-/*   UI                              */
-/* --------------------------------- */
 /* Buttons */
 @media only screen and (max-width: 767px) { .button { display: block; }
   button.button { width: 100%; padding-left: 0px; padding-right: 0px; } }

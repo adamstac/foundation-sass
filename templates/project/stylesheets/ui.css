@@ -1,16 +1,11 @@
-/* --------------------------------- */
-/*   Table of Content                */
-/* --------------------------------- */
-/*   :: Buttons                      */
-/*   :: Notices/Alerts               */
-/*   :: tabs                         */
-/*   :: Pagination                   */
-/*   :: Lists                        */
-/*   :: Panels                       */
-/*                                   */
-/* --------------------------------- */
-/*   Buttons                         */
-/* --------------------------------- */
+/* Table of Content */
+/* :: Buttons */
+/* :: Notices/Alerts */
+/* :: tabs */
+/* :: Pagination */
+/* :: Lists */
+/* :: Panels */
+/* Buttons */
 .button { background: #00a6fc; display: inline-block; text-align: center; padding: 9px 34px 11px; color: white; text-decoration: none; font-weight: bold; line-height: 1; position: relative; cursor: pointer; border: none; }
 .button.nice { background-color: #00a6fc; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))); background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%); background-image: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28); border: solid 1px #008ed8; -moz-transition-property: background-color; -webkit-transition-property: background-color; -o-transition-property: background-color; transition-property: background-color; -moz-transition-duration: 0.15s; -webkit-transition-duration: 0.15s; -o-transition-duration: 0.15s; transition-duration: 0.15s; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
 .button.radius { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
@@ -42,9 +37,7 @@
 .button.white:hover { background-color: #e0e0e0; color: #333333; }
 .button.charcoal:hover { background-color: #070707; }
 
-/* --------------------------------- */
-/*   Alerts                          */
-/* --------------------------------- */
+/* Alerts */
 div.alert-box { display: block; padding: 6px 7px; font-weight: bold; font-size: 13px; font-size: 1.3rem; background: #eeeeee; border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 12px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; text-shadow: 0 1px rgba(255, 255, 255, 0.9); position: relative; }
 div.alert-box.success { background-color: #7fae00; color: white; text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
 div.alert-box.warning { background-color: #c08c00; color: white; text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
@@ -52,9 +45,7 @@ div.alert-box.error { background-color: #c00000; color: white; text-shadow: 0 -1
 div.alert-box a.close { color: black; position: absolute; right: 4px; top: 0px; font-size: 18px; font-size: 1.8rem; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; padding: 4px; }
 div.alert-box a.close:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
 
-/* --------------------------------- */
-/*   Tabs                            */
-/* --------------------------------- */
+/* Tabs */
 dl.tabs { display: block; margin: 0 0 20px; padding: 0; height: 30px; border-bottom: solid 1px #dddddd; }
 dl.tabs dt { display: block; width: auto; height: 30px; padding: 0px 9px 0px 20px; line-height: 30px; float: left; color: #999999; font-size: 11px; font-size: 1.1rem; text-transform: uppercase; cursor: default; }
 dl.tabs dt:first-child { padding: 0 9px 0 0; }
@@ -82,9 +73,7 @@ ul.contained.tabs-content li { padding: 20px; border: solid 0px #dddddd; border-
 
 ul.nice.contained.tabs-content li { border-color: #eeeeee; }
 
-/* --------------------------------- */
-/*   Pagination                      */
-/* --------------------------------- */
+/* Pagination */
 ul.pagination { display: block; height: 24px; margin-left: -5px; }
 ul.pagination li { float: left; display: block; height: 24px; color: #999999; font-size: 15px; font-size: 1.5rem; margin-left: 5px; }
 ul.pagination li a { display: block; padding: 6px 7px 4px; color: #555555; }
@@ -92,24 +81,20 @@ ul.pagination li.current a, ul.pagination li:hover a { border-bottom: solid 2px 
 ul.pagination li.unavailable a { cursor: default; color: #999999; }
 ul.pagination li.unavailable:hover a { border-bottom: none; }
 
-/* --------------------------------- */
-/*   Lists                           */
-/* --------------------------------- */
+/* Lists */
 ul.nice, ol.nice { list-style: none; margin: 0; }
 ul.nice li, ol.nice li { padding-left: 13px; position: relative; }
 
 ul.nice li span.bullet, ol.nice li span.number { position: absolute; left: 0px; top: 0px; color: #cccccc; }
 
-/* --------------------------------- */
-/*   Notices/Alerts                  */
-/* --------------------------------- */
+/* Notices/Alerts */
 /* Alerts cannot be closed and notices can */
 .notice, .alert { position: relative; background: #222222 url('../images/misc/button-overlay.png?1296761857') repeat-x bottom; width: 100%; margin: 10px 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; color: white; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); font-weight: bold; }
 .notice > span, .alert > span { display: block; padding: 5px 10px 6px; }
 
 .notice a.close { font-size: 20px; font-size: 2rem; line-height: 0.5; color: white; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); font-weight: bold; cursor: pointer; position: absolute; right: 10px; top: 6px; }
 
-/*  NOTES */
+/* NOTES */
 /* Close button entity is &#215; */
 /* Sample Markup:  */
 /* <div class="notice"><span> */

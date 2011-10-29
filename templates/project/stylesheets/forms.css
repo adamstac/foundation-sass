@@ -51,9 +51,7 @@ form.nice .small + .error { width: 132px; }
 form.nice .medium + .error { width: 252px; }
 form.nice .large + .error { width: 432px; }
 
-/* --------------------------------- */
-/*   Custom Forms                    */
-/* --------------------------------- */
+/* Custom Forms */
 form.custom span.custom { display: inline-block; width: 14px; height: 14px; position: relative; top: 2px; border: solid 1px #cccccc; background: url('../images/misc/custom-form-sprites.png?1299474407') 0 0 no-repeat; }
 form.custom span.custom.radio { -moz-border-radius: 7px; -webkit-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; }
 form.custom span.custom.radio.checked { background-position: 0 -14px; }

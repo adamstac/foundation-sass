@@ -3,15 +3,15 @@
 //----- Mixins -----//
 // Font
 @mixin HelveticaFontStack
-  :font-family "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 
 // Font size to include rem and px
 @mixin font-size($size)
-  :font-size $size + px 
-  :font-size ($size / 10) + rem
+  font-size: $size + px 
+  font-size: ($size / 10) + rem
 @mixin font-size-important($size)
-  :font-size $size + px !important
-  :font-size ($size /10) + rem !important
+  font-size: $size + px !important
+  font-size: ($size /10) + rem !important
 
 //Colors
 $blue: #00a6fc

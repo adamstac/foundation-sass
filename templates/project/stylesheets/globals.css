@@ -1,20 +1,12 @@
-/*   Artfully masterminded by ZURB   */
-/*                                   */
-/* --------------------------------- */
-/*   Table of Contents               */
-/* --------------------------------- */
-/*   :: Reset & Standards            */
-/*   :: Links                        */
-/*   :: Lists                        */
-/*   :: Tables                       */
-/*   :: Misc                         */
-/*                                   */
-/*                                   */
-/* --------------------------------- */
-/*   Global Reset & Standards        */
-/* --------------------------------- */
-/*                                   */
-/* Eric Meyer's CSS Reset http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)            */
+/* Artfully masterminded by ZURB */
+/* Table of Contents */
+/*  :: Reset & Standards */
+/*  :: Links */
+/*  :: Lists */
+/*  :: Tables */
+/*  :: Misc */
+/* Global Reset & Standards */
+/* Eric Meyer's CSS Reset :: http://meyerweb.com/eric/tools/css/reset/ :: v2.0 | 20110126 :: License: none (public domain) */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
 
 html { font-size: 62.5%; }
@@ -33,17 +25,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { background: white; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555555; position: relative; -webkit-font-smoothing: antialiased; }
 
-/* --------------------------------- */
-/*   Links                           */
-/* --------------------------------- */
+/* Links */
 a { color: #00a6fc; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #30b8ff; }
 
 p a, p a:visited { line-height: inherit; }
 
-/* --------------------------------- */
-/*   Lists                           */
-/* --------------------------------- */
+/* Lists */
 ul, ol { margin-bottom: 18px; }
 
 ul { list-style: none outside; }
@@ -61,9 +49,7 @@ li { margin-bottom: 12px; }
 
 ul.large li { line-height: 21px; }
 
-/* --------------------------------- */
-/*   Tables                          */
-/* --------------------------------- */
+/* Tables */
 table { background: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; width: 100%; margin: 0 0 18px; border: solid 1px #dddddd; }
 table thead { background: #f5f5f5; }
 table thead tr th { font-size: 12px; font-size: 1.2rem; line-height: 18px; text-align: left; padding: 8px 10px 9px; font-size: 14px; font-size: 1.4rem; font-weight: bold; color: #222222; }
@@ -73,9 +59,7 @@ table tbody tr.even, table tbody tr.alt { background: #f9f9f9; }
 table tbody tr:nth-child(even) { background: #f9f9f9; }
 table tbody tr td { font-size: 12px; font-size: 1.2rem; line-height: 18px; text-align: left; color: #333333; padding: 9px 10px; vertical-align: top; border: none; }
 
-/* --------------------------------- */
-/*   Misc                            */
-/* --------------------------------- */
+/* Misc */
 .left { float: left; }
 
 .right { float: right; }
