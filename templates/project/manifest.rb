@@ -54,10 +54,9 @@ file "sass/ui.sass"
 file "sass/mobile.sass"
 file "sass/grid.sass"
 file "sass/typography.sass"
-#Sass Mixin Partials
+# Sass Mixin Partials
 file "sass/includes/_mixins.sass"
 file "sass/includes/_settings.sass"
-
 
 
 description "sass-foundation"

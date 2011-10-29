@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "2.0.1"
-  s.date = "2011-10-26"
+  s.version = "2.0.2"
+  s.date = "2011-10-29"
 
   # Gem Details
-  s.name = "sass-foundation"
+  s.name = "foundation-sass"
   s.authors = ["ZURB"]
   s.summary = %q{ZURB Foundation all Sassyfied}
   s.description = %q{ZURB Foundation all Sassyfied for quickly jumping into foundation. }

@@ -1,10 +1,5 @@
-/*   Artfully masterminded by ZURB   */
-/*                                   */
-/*   Make sure to include app.js if using inline label inputs */
-/*                                   */
-/* --------------------------------- */
-/*   Standard Forms                  */
-/* --------------------------------- */
+/* Artfully masterminded by ZURB :: Make sure to include app.js if using inline label inputs */
+/* Standard Forms */
 form { margin: 0 0 18px; }
 form label { display: block; font-size: 13px; font-size: 1.3rem; line-height: 18px; cursor: pointer; margin-bottom: 9px; }
 
@@ -20,7 +15,7 @@ input.input-text.oversize, textarea.oversize { font-size: 18px !important; font-
 input.input-text:focus, textarea:focus { background: #f9f9f9; }
 
 /* Inlined Label Style */
-input.placeholder, textarea.placeholder { color: #888888; }
+input .placeholder, textarea .placeholder { color: #888888; }
 
 /* Text input and textarea sizes */
 input.input-text { width: 254px; }
@@ -47,9 +42,7 @@ small.error { margin-top: -6px; display: block; margin-bottom: 9px; font-size: 1
 
 .large + .error { width: 440px; }
 
-/* --------------------------------- */
-/*   Nicer Forms                     */
-/* --------------------------------- */
+/* Nicer Forms */
 form.nice input.input-text, form.nice textarea { border: solid 1px #bbbbbb; -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; font-size: 13px; font-size: 1.3rem; padding: 6px 3px 4px; outline: none !important; background: url('../images/misc/input-bg.png?1296761857') white; }
 form.nice input.input-text:focus, form.nice textarea:focus { background-color: #f9f9f9; }
 form.nice input.input-text fieldset, form.nice textarea fieldset { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
