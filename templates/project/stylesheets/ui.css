@@ -101,3 +101,5 @@ ul.nice li span.bullet, ol.nice li span.number { position: absolute; left: 0px; 
 /* 	This is awesome */
 /* 	<a class="close" href="#">&#215;</a> */
 /* </span></div> */
+/* Panels */
+div.panel { padding: 20px 20px 2px 20px; background-color: #efefef; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f4f4f4)); background-image: -moz-linear-gradient(#ffffff 0%, #f4f4f4 100%); background-image: linear-gradient(#ffffff 0%, #f4f4f4 100%); -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); -o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); margin: 0 0 20px 0; }
