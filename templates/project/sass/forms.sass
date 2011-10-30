@@ -152,31 +152,31 @@ form.custom
         right: 0px
         top: 0px
         border: solid 1px #ddd
-        ul
-          position: absolute
-          width: auto
-          display: none
+      ul
+        position: absolute
+        width: auto
+        display: none
+        margin: 0
+        left: 0
+        top: 27px
+        margin: 0
+        padding: 0
+        background: rgba(255,255,255,0.9)
+        border: solid 1px #ddd
+        z-index: 10
+        &.show
+          display: block
+        li
+          cursor: pointer
+          padding: 3px 38px 3px 6px
           margin: 0
-          left: 0
-          top: 27px
-          margin: 0
-          padding: 0
-          background: rgba(255,255,255,0.9)
-          border: solid 1px #ddd
-          z-index: 10
-          &.show
-            display: block
-          li
-            cursor: pointer
-            padding: 3px 38px 3px 6px
-            margin: 0
-            &.selected
-              background: image-url('misc/custom-form-sprites.png') right -52px no-repeat
-              &:hover
-                background: image-url('misc/custom-form-sprites.png') $blue right -78px no-repeat
+          &.selected
+            background: image-url('misc/custom-form-sprites.png') right -52px no-repeat
             &:hover
-              background-color: $blue
-              color: #fff
+              background: image-url('misc/custom-form-sprites.png') $blue right -78px no-repeat
+          &:hover
+            background-color: $blue
+            color: #fff
       &:hover
         a.selector
           background-position: -14px -26px
