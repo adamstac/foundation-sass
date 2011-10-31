@@ -52,7 +52,7 @@
 .row .ten.centered { margin-left: 8.7%; }
 .row .eleven.centered { margin-left: 4.3%; }
 
-img, object, embed { max-width: 100%; }
+img, object, embed { max-width: 100%; height: auto; }
 
 img { -ms-interpolation-mode: bicubic; }
 

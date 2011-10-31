@@ -14,9 +14,9 @@
 .button.left-align { text-align: left; text-indent: 12px; }
 
 /* Sizes */
-.button.small { font-size: 11px; font-size: 1.1rem; padding: 8px 20px 10px; }
-.button.medium { font-size: 13px; font-size: 1.3rem; }
-.button.large { font-size: 18px; font-size: 1.8rem; padding: 11px 48px 13px; }
+.button.small { font-size: 11px; font-size: 1.1rem; padding: 8px 20px 10px; width: auto; }
+.button.medium { font-size: 13px; font-size: 1.3rem; width: auto; }
+.button.large { font-size: 18px; font-size: 1.8rem; padding: 11px 48px 13px; width: auto; }
 
 /* Colors */
 .button.blue { background-color: #00a6fc; }

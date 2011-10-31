@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "2.0.2"
-  s.date = "2011-10-29"
+  s.version = "2.0.3"
+  s.date = "2011-10-31"
 
   # Gem Details
   s.name = "foundation-sass"
