@@ -1,4 +1,4 @@
-description "sass-foundation"
+description "foundation-sass"
 
 # Make sure you list all the project template files here in the manifest.
 file "index.html"
