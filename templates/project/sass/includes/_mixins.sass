@@ -1,21 +1,15 @@
-// Include custom mixins variable, etc here
+// `Font stacks
+//----------------------------------------------------------------------------------------------------
 
-//----- Mixins -----//
-// Font
 @mixin HelveticaFontStack
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 
-// Font size to include rem and px
-@mixin font-size($size)
-  font-size: $size + px 
-  font-size: ($size / 10) + rem
-@mixin font-size-important($size)
-  font-size: $size + px !important
-  font-size: ($size /10) + rem !important
+// Font size mixin to include px and rem
 
-//Colors
-$blue: #00a6fc
-$white: #fff
-$black: #000
-$red: #e91c21
-$charcoal: #141414
+@mixin font-size($size, $important: false)
+  @if $important
+    font-size: $size + px !important
+    font-size: ($size / 10) + rem !important
+  @else
+    font-size: $size + px 
+    font-size: ($size / 10) + rem
