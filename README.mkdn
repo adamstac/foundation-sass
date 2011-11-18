@@ -4,8 +4,6 @@ Sass Foundation
 To create your first project, navigate to the foundation-sass folder in terminal and install the gem. You'll also need to make sure Compass is installed.
     
 In Terminal:
-* cd path/to/foundation-sass
-* sudo gem install foundation-sass
 * sudo gem install compass
 
 Next you'll create your first project.
