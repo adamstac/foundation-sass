@@ -1,68 +1,24 @@
-/*
-Syntax error: Undefined mixin 'border-radius'.
-        on line 25 of /Users/chris/Sites/foundation-sass/templates/project/sass/reveal.sass, in `border-radius'
-        from line 25 of /Users/chris/Sites/foundation-sass/templates/project/sass/reveal.sass
+/* Reveal Modals */
+.reveal-modal-bg { position: fixed; height: 100%; width: 100%; background: black; background: rgba(0, 0, 0, 0.8); z-index: 100; display: none; top: 0; left: 0; }
 
-Backtrace:
-/Users/chris/Sites/foundation-sass/templates/project/sass/reveal.sass:25:in `border-radius'
-/Users/chris/Sites/foundation-sass/templates/project/sass/reveal.sass:25
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:235:in `visit_rule'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:293:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/util.rb:297:in `silence_sass_warnings'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:127:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:126:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:125:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:105:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:92:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:89:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:110:in `recompile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:40:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:25
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 25 of /Users/chris/Sites/foundation-sass/templates/project/sass/reveal.sass, in `border-radius'\A         from line 25 of /Users/chris/Sites/foundation-sass/templates/project/sass/reveal.sass"; }
+.reveal-modal { visibility: hidden; top: 100px; left: 50%; margin-left: -300px; width: 520px; background: #eeeeee url('../images/misc/modal-gloss.png?1296761857') no-repeat -200px -80px; position: absolute; z-index: 101; padding: 30px 40px 34px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+.reveal-modal.small { width: 200px; margin-left: -140px; }
+.reveal-modal.medium { width: 400px; margin-left: -240px; }
+.reveal-modal.large { width: 600px; margin-left: -340px; }
+.reveal-modal.xlarge { width: 800px; margin-left: -440px; }
+.reveal-modal .close-reveal-modal { font-size: 22px; font-size: 2.2rem; line-height: 0.5; position: absolute; top: 8px; right: 11px; color: #aaaaaa; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6); font-weight: bold; cursor: pointer; }
+
+/* Mobile */
+@media only screen and (device-width: 768px), (device-width: 800px) { .reveal-modal-bg { position: absolute; }
+  .reveal-modal.small, .reveal-modal.medium, .reveal-modal.large, .reveal-modal.xlarge { width: 60%; top: 30%; left: 15%; margin-left: 0px; padding: 5%; height: auto; } }
+@media only screen and (max-width: 767px) { .reveal-modal-bg { position: absolute; }
+  .reveal-modal.small, .reveal-modal.medium, .reveal-modal.large, .reveal-modal.xlarge { width: 80%; top: 15%; left: 5%; margin-left: 0px; padding: 5%; height: auto; } }
+/* NOTES */
+/* Close button entity is &#215; */
+/* Example markup */
+/* <div id="myModal" class="reveal-modal"> */
+/* 	<h2>Awesome. I have it.</h2> */
+/* 	<p class="lead">Your couch.  I it's mine.</p> */
+/* 	<p>Lorem ipsum dolor sit amet...</p> */
+/* 	<a class="close-reveal-modal">&#215;</a> */
+/* </div> */

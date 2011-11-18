@@ -1,5 +1,6 @@
 @import includes/settings
 @import includes/mixins
+@import includes/colors
 /* CSS for jQuery Orbit Plugin 1.2.3 :: www.ZURB.com/playground :: Copyright 2010, ZURB :: Free to use under the MIT license. :: http://www.opensource.org/licenses/mit-license.php */
 
 /*  PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY */                    
@@ -21,6 +22,8 @@ div.orbit
   height: 1px
   position: relative
   overflow: hidden
+  &.with-bullets
+    margin-bottom: 40px
   &>img
     position: absolute
     top: 0
@@ -109,7 +112,8 @@ div.slider-nav
     height: 100px
     text-indent: -99999px
     position: absolute
-    z-index: 50%
+    z-index: 1000
+    top: 50%
     margin-top: -50px
     cursor: pointer
     &.right

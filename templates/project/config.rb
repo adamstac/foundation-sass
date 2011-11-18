@@ -7,14 +7,12 @@ require 'foundation-sass'
 http_path             = '/'
 http_stylesheets_path = '/stylesheets'
 http_images_path      = '/images'
-http_fonts_path       = '/fonts'
 http_javascripts_path = '/javascripts'
 
 # File system locations
 sass_dir              = 'sass'
 css_dir               = 'stylesheets'
 images_dir            = 'images'
-fonts_dir             = 'fonts'
 javascripts_dir       = 'javascripts'
 
 # Set to true for debugging

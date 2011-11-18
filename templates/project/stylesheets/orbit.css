@@ -1,68 +1,45 @@
-/*
-Syntax error: Undefined mixin 'opacity'.
-        on line 45 of /Users/chris/Sites/foundation-sass/templates/project/sass/orbit.sass, in `opacity'
-        from line 45 of /Users/chris/Sites/foundation-sass/templates/project/sass/orbit.sass
+/* CSS for jQuery Orbit Plugin 1.2.3 :: www.ZURB.com/playground :: Copyright 2010, ZURB :: Free to use under the MIT license. :: http://www.opensource.org/licenses/mit-license.php */
+/*  PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY */
+#featured { width: 940px; height: 450px; background: black url('../images/orbit/loading.gif?1296761857') no-repeat center center; overflow: hidden; }
+#featured > img, #featured > div, #featured > a { display: none; }
 
-Backtrace:
-/Users/chris/Sites/foundation-sass/templates/project/sass/orbit.sass:45:in `opacity'
-/Users/chris/Sites/foundation-sass/templates/project/sass/orbit.sass:45
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:235:in `visit_rule'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:293:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/util.rb:297:in `silence_sass_warnings'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:127:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:126:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:125:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:105:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:92:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:89:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:110:in `recompile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:40:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:25
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'opacity'.\A         on line 45 of /Users/chris/Sites/foundation-sass/templates/project/sass/orbit.sass, in `opacity'\A         from line 45 of /Users/chris/Sites/foundation-sass/templates/project/sass/orbit.sass"; }
+/* Container */
+div.orbit-wrapper { width: 1px; height: 1px; position: relative; }
+
+div.orbit { width: 1px; height: 1px; position: relative; overflow: hidden; }
+div.orbit.with-bullets { margin-bottom: 40px; }
+div.orbit > img { position: absolute; top: 0; left: 0; }
+div.orbit > a { border: none; position: absolute; top: 0; left: 0; line-height: 0; display: none; }
+
+/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
+/* Timer */
+div.timer { width: 40px; height: 40px; overflow: hidden; position: absolute; top: 10px; right: 10px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; cursor: pointer; z-index: 1001; }
+
+span.rotator { display: block; width: 40px; height: 40px; position: absolute; top: 0; left: -20px; background: url('../images/orbit/rotator-black.png?1296761857') no-repeat; z-index: 3; }
+span.rotator.move { left: 0; }
+
+span.mask { display: block; width: 20px; height: 40px; position: absolute; top: 0; right: 0; z-index: 2; overflow: hidden; }
+span.mask.move { width: 40px; left: 0; background: url('../images/orbit/timer-black.png?1296761857') repeat 0 0; }
+
+span.pause { display: block; width: 40px; height: 40px; position: absolute; top: 0; left: 0; background: url('../images/orbit/pause-black.png?1296761857') no-repeat; z-index: 4; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+span.pause.active { background: url('../images/orbit/pause-black.png?1296761857') no-repeat 0 -40px; }
+
+div.timer:hover span.pause, span.pause.active { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+
+/* Captions */
+.orbit-caption { display: none; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+.orbit-wrapper .orbit-caption { background: black; background: rgba(0, 0, 0, 0.6); z-index: 1000; color: white; text-align: center; padding: 7px 0; font-size: 13px; font-size: 1.3rem; position: absolute; right: 0; bottom: 0; width: 100%; }
+
+/* Directional Nav */
+div.slider-nav { display: block; }
+div.slider-nav span { width: 78px; height: 100px; text-indent: -99999px; position: absolute; z-index: 1000; top: 50%; margin-top: -50px; cursor: pointer; }
+div.slider-nav span.right { background: url('../images/orbit/right-arrow.png?1296761857'); right: 0; }
+div.slider-nav span.left { background: url('../images/orbit/left-arrow.png?1296761857'); left: 0; }
+
+/* Bullet Nav */
+.orbit-bullets { position: absolute; z-index: 1000; list-style: none; bottom: -40px; left: 50%; margin-left: -50px; padding: 0; }
+.orbit-bullets li { float: left; margin-left: 5px; cursor: pointer; color: #999999; text-indent: -99999px; background: url('../images/orbit/bullets.jpg?1296761857') no-repeat 4px 0; width: 13px; height: 12px; overflow: hidden; }
+.orbit-bullets li.active { color: #222222; background-position: -8px 0; }
+.orbit-bullets li.has-thumb { background: none; width: 100px; height: 75px; }
+.orbit-bullets li.active.has-thumb { background-position: 0 0; border-top: solid 2px #141414; }

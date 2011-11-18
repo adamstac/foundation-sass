@@ -10,41 +10,41 @@ file "MIT-LICENSE.txt"
 file "config.rb"
 
 # CSS Files
-stylesheet "stylesheets/app.css", :media => 'screen'
-stylesheet "stylesheets/forms.css", :media => 'screen'
-stylesheet "stylesheets/globals.css", :media => 'screen'
-stylesheet "stylesheets/ie.css", :media => 'screen'
-stylesheet "stylesheets/orbit.css", :media => 'screen'
-stylesheet "stylesheets/reveal.css", :media => 'screen'
-stylesheet "stylesheets/ui.css", :media => 'screen'
-stylesheet "stylesheets/mobile.css", :media => 'screen'
-stylesheet "stylesheets/grid.css", :media => 'screen'
-stylesheet "stylesheets/typography.css", :media => 'screen'
+file "stylesheets/app.css", :media => 'screen'
+file "stylesheets/forms.css", :media => 'screen'
+file "stylesheets/globals.css", :media => 'screen'
+file "stylesheets/ie.css", :media => 'screen'
+file "stylesheets/orbit.css", :media => 'screen'
+file "stylesheets/reveal.css", :media => 'screen'
+file "stylesheets/ui.css", :media => 'screen'
+file "stylesheets/mobile.css", :media => 'screen'
+file "stylesheets/grid.css", :media => 'screen'
+file "stylesheets/typography.css", :media => 'screen'
 
 # Image Files
-image "images/misc/button-gloss.png"
-image "images/misc/button-overlay.png"
-image "images/misc/custom-form-sprites.png"
-image "images/misc/input-bg.png"
-image "images/misc/modal-gloss.png"
-image "images/misc/table-sorter.png"
-image "images/orbit/bullets.jpg"
-image "images/orbit/left-arrow.png"
-image "images/orbit/loading.gif"
-image "images/orbit/mask-black.png"
-image "images/orbit/pause-black.png"
-image "images/orbit/right-arrow.png"
-image "images/orbit/rotator-black.png"
-image "images/orbit/timer-black.png"
+file "images/misc/button-gloss.png"
+file "images/misc/button-overlay.png"
+file "images/misc/custom-form-sprites.png"
+file "images/misc/input-bg.png"
+file "images/misc/modal-gloss.png"
+file "images/misc/table-sorter.png"
+file "images/orbit/bullets.jpg"
+file "images/orbit/left-arrow.png"
+file "images/orbit/loading.gif"
+file "images/orbit/mask-black.png"
+file "images/orbit/pause-black.png"
+file "images/orbit/right-arrow.png"
+file "images/orbit/rotator-black.png"
+file "images/orbit/timer-black.png"
 
 # Javascrips
-javascript "javascripts/app.js"
-javascript "javascripts/forms.jquery.js"
-javascript "javascripts/jquery.customforms.js"
-javascript "javascripts/jquery.min.js" 
-javascript "javascripts/jquery.reveal.js"
-javascript "javascripts/jquery.orbit-1.3.0.js"
-javascript "javascripts/jquery.placeholder.min.js"
+file "javascripts/app.js"
+file "javascripts/forms.jquery.js"
+file "javascripts/jquery.customforms.js"
+file "javascripts/jquery.min.js" 
+file "javascripts/jquery.reveal.js"
+file "javascripts/jquery.orbit-1.3.0.js"
+file "javascripts/jquery.placeholder.min.js"
 
 # Sass Files
 file "sass/app.sass"
@@ -60,6 +60,7 @@ file "sass/typography.sass"
 # Sass Mixins
 file "sass/includes/_mixins.sass"
 file "sass/includes/_settings.sass"
+file "sass/includes/_colors.sass"
 
 help %Q{
 
