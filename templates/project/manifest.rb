@@ -4,6 +4,7 @@ description "foundation-sass"
 file "index.html"
 file "humans.txt"
 file "robots.txt"
+file "MIT-LICENSE.txt"
 
 # Config File needs --force to work when creating a project
 file "config.rb"
