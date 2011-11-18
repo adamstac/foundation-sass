@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.name = "foundation-sass"
   s.authors = ["ZURB"]
   s.summary = %q{ZURB Foundation all Sassyfied}
-  s.description = %q{ZURB Foundation all Sassyfied for quickly jumping into foundation. }
+  s.description = %q{ZURB Foundation all Sassyfied for quickly jumping into foundation using SASS. }
   s.email = "foundation@zurb.com"
   s.homepage = "http://foundation.zurb.com"
 

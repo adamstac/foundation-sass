@@ -1,69 +1,68 @@
-/* Artfully masterminded by ZURB */
-/* Table of Contents */
-/*  :: Reset & Standards */
-/*  :: Links */
-/*  :: Lists */
-/*  :: Tables */
-/*  :: Misc */
-/* Global Reset & Standards */
-/* Eric Meyer's CSS Reset :: http://meyerweb.com/eric/tools/css/reset/ :: v2.0 | 20110126 :: License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
+/*
+Syntax error: Undefined variable: "$blue".
+        on line 50 of /Users/chris/Sites/foundation-sass/templates/project/sass/globals.sass
 
-html { font-size: 62.5%; }
-
-/* HTML 5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-
-body { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-body { background: white; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555555; position: relative; -webkit-font-smoothing: antialiased; }
-
-/* Links */
-a { color: #00a6fc; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #30b8ff; }
-
-p a, p a:visited { line-height: inherit; }
-
-/* Lists */
-ul, ol { margin-bottom: 18px; }
-
-ul { list-style: none outside; }
-ul.square { list-style: square outside; }
-ul.circle { list-style: circle outside; }
-ul.disc { list-style: disc outside; }
-
-ol { list-style: decimal; }
-
-ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
-
-ul ul, ol ol { margin: 4px 0 5px 30px; }
-
-li { margin-bottom: 12px; }
-
-ul.large li { line-height: 21px; }
-
-/* Tables */
-table { background: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; width: 100%; margin: 0 0 18px; border: solid 1px #dddddd; }
-table thead { background: #f5f5f5; }
-table thead tr th { font-size: 12px; font-size: 1.2rem; line-height: 18px; text-align: left; padding: 8px 10px 9px; font-size: 14px; font-size: 1.4rem; font-weight: bold; color: #222222; }
-table thead tr th:first-child { border-left: none; }
-table thead tr th:last-child { border-right: none; }
-table tbody tr.even, table tbody tr.alt { background: #f9f9f9; }
-table tbody tr:nth-child(even) { background: #f9f9f9; }
-table tbody tr td { font-size: 12px; font-size: 1.2rem; line-height: 18px; text-align: left; color: #333333; padding: 9px 10px; vertical-align: top; border: none; }
-
-/* Misc */
-.left { float: left; }
-
-.right { float: right; }
-
-.hide { display: none; }
-
-.highlight { background: yellow; }
+Backtrace:
+/Users/chris/Sites/foundation-sass/templates/project/sass/globals.sass:50
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/variable.rb:50:in `_perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:235:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:293:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/util.rb:297:in `silence_sass_warnings'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:127:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:126:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:125:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:105:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:92:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:89:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:110:in `recompile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:25
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$blue\".\A         on line 50 of /Users/chris/Sites/foundation-sass/templates/project/sass/globals.sass"; }

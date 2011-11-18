@@ -1,54 +1,76 @@
-/* Mobile Grid Fixes */
-@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; }
-  .row, body, .container { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
-  .row .row .column, .row .row .columns { padding: 0; }
-  .column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; padding-left: 20px; padding-right: 20px; }
-  .column:last-child, .columns:last-child { margin-right: 0; }
-  .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten, .offset-by-eleven, .centered { margin-left: 0% !important; } }
-/* Block Grid */
-@media only screen and (max-width: 767px) { .block-grid.mobile li { float: none; width: 100%; } }
-/* Mobile Visibility Affordances */
-.show-on-phones { display: none !important; }
+/*
+Syntax error: Undefined mixin 'border-radius'.
+        on line 88 of /Users/chris/Sites/foundation-sass/templates/project/sass/mobile.sass, in `border-radius'
+        from line 88 of /Users/chris/Sites/foundation-sass/templates/project/sass/mobile.sass
 
-.show-on-tablet { display: none !important; }
-
-.show-on-desktop { display: block; }
-
-.hide-on-phones { display: block !important; }
-
-.hide-on-tablet { display: block !important; }
-
-.hide-on-desktop { display: none; }
-
-@media only screen and (max-device-width: 800px), only screen and (device-width: 800px) { .show-on-phones { display: block !important; }
-  .show-on-tablet { display: none !important; }
-  .show-on-desktop { display: block !important; }
-  .hide-on-phones { display: none !important; }
-  .hide-on-tablet { display: block !important; }
-  .hide-on-desktop { display: none !important; } }
-@media only screen and (max-width: 767px) { .show-on-phones { display: none !important; }
-  .show-on-tablet { display: block !important; }
-  .show-on-desktop { display: block !important; }
-  .hide-on-phones { display: block !important; }
-  .hide-on-tablet { display: none !important; }
-  .hide-on-desktop { display: none !important; } }
-/* Forms */
-@media only screen and (max-width: 767px) { input.input-text, input.input-text.oversize, textarea, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { display: block; width: 96%; padding: 6px 2% 4px; font-size: 18px; font-size: 1.8rem; }
-  form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea { -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
-  form.nice small.error { padding: 6px 2%; display: block; }
-  form.nice .small + .error, form.nice .medium + .error, form.nice .large + .error { width: auto; } }
-/* Buttons */
-@media only screen and (max-width: 767px) { .button { display: block; }
-  button.button { width: 100%; padding-left: 0px; padding-right: 0px; } }
-/* Tabs */
-@media only screen and (max-width: 767px) { dl.tabs.mobile, dl.nice.tabs.mobile { width: auto; margin: 20px -20px 40px; height: auto; }
-  dl.tabs.mobile dt, dl.tabs.mobile dd, dl.nice.tabs.mobile dt, dl.nice.tabs.mobile dd { float: none; height: auto; }
-  dl.tabs.mobile dd a { display: block; width: auto; height: auto; padding: 18px 20px; line-height: 1; border: solid 0px #cccccc; border-width: 1px 0px 0px; margin: 0; color: #555555; background: #eeeeee; font-size: 15px; font-size: 1.5rem; }
-  dl.tabs.mobile dd a.active { height: auto; margin: 0; border-width: 1px 0px 0px; }
-  .nice.tabs.mobile { border-bottom: solid 1px #cccccc; height: auto; }
-  .nice.tabs.mobile dd a { padding: 18px 20px; border: none; border-left: none; border-right: none; border-top: solid 1px #cccccc; background: white; }
-  .nice.tabs.mobile dd a.active { border: none; background: #00a6fc; color: white; margin: 0; position: static; top: 0px; height: auto; }
-  .nice.tabs.mobile dd:first-child a.active { margin-bottom: 0px; }
-  dl.contained.mobile, dl.nice.contained.mobile { margin-bottom: 0; }
-  dl.contained.tabs.mobile dd a { padding: 18px 20px; }
-  dl.nice.contained.tabs.mobile dd a { padding: 18px 20px; } }
+Backtrace:
+/Users/chris/Sites/foundation-sass/templates/project/sass/mobile.sass:88:in `border-radius'
+/Users/chris/Sites/foundation-sass/templates/project/sass/mobile.sass:88
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:235:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:39:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:293:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/util.rb:297:in `silence_sass_warnings'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:127:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:126:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:125:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:105:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:92:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:90:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:113:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/compiler.rb:89:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:110:in `recompile'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/watch_project.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:25
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.11.beta.5/bin/compass:39
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 88 of /Users/chris/Sites/foundation-sass/templates/project/sass/mobile.sass, in `border-radius'\A         from line 88 of /Users/chris/Sites/foundation-sass/templates/project/sass/mobile.sass"; }

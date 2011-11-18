@@ -3,7 +3,7 @@ Compass::Frameworks.register("foundation-sass", :path => "#{File.dirname(__FILE_
 
 module FoundationSass
   
-  VERSION = "2.0.3"
-  DATE = "2011-10-31"
+  VERSION = "2.1"
+  DATE = "2011-11-18"
 
 end
