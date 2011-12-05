@@ -8,22 +8,22 @@ To install from Ruby Gems
 
 In Terminal:
 
-* sudo gem install foundation-sass
+* `sudo gem install foundation-sass`
 
 To install locally
 ------------------
 
 In Terminal:
 
-* git clone git://github.com/bzerangue/foundation-sass.git
-* cd foundation-sass
-* sudo gem build foundation-sass.gemspec
-* sudo gem install foundation-sass-2.1.gem
+* `git clone git://github.com/bzerangue/foundation-sass.git`
+* `cd foundation-sass`
+* `sudo gem build foundation-sass.gemspec`
+* `sudo gem install foundation-sass-2.1.gem`
 
 To create your first project
 ----------------------------
 
-* cd path/to/where-you-want-new-project
+* `cd path/to/where-you-want-new-project`
 * .scss syntax
 * `compass create my_project -r foundation-sass --using foundation-sass`
 * .sass syntax
