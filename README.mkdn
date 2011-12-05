@@ -10,8 +10,6 @@ In Terminal:
 
 * sudo gem install foundation-sass
 
-Next you'll create your first project.
-
 To install locally
 ------------------
 
