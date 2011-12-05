@@ -1,66 +1,66 @@
-description "foundation-sass"
+description 'foundation-sass'
 
 # Make sure you list all the project template files here in the manifest.
-file "index.html"
-file "humans.txt"
-file "robots.txt"
-file "MIT-LICENSE.txt"
+html 'index.html'
+file 'humans.txt'
+file 'robots.txt'
+file 'MIT-LICENSE.txt'
 
 # Config File needs --force to work when creating a project
-file "config.rb"
+file 'config.rb'
 
 # CSS Files
-file "stylesheets/app.css", :media => 'screen'
-file "stylesheets/forms.css", :media => 'screen'
-file "stylesheets/globals.css", :media => 'screen'
-file "stylesheets/ie.css", :media => 'screen'
-file "stylesheets/orbit.css", :media => 'screen'
-file "stylesheets/reveal.css", :media => 'screen'
-file "stylesheets/ui.css", :media => 'screen'
-file "stylesheets/mobile.css", :media => 'screen'
-file "stylesheets/grid.css", :media => 'screen'
-file "stylesheets/typography.css", :media => 'screen'
+stylesheet 'app.css', :media => 'screen'
+stylesheet 'forms.css', :media => 'screen'
+stylesheet 'globals.css', :media => 'screen'
+stylesheet 'ie.css', :media => 'screen'
+stylesheet 'orbit.css', :media => 'screen'
+stylesheet 'reveal.css', :media => 'screen'
+stylesheet 'ui.css', :media => 'screen'
+stylesheet 'mobile.css', :media => 'screen'
+stylesheet 'grid.css', :media => 'screen'
+stylesheet 'typography.css', :media => 'screen'
 
 # Image Files
-file "images/misc/button-gloss.png"
-file "images/misc/button-overlay.png"
-file "images/misc/custom-form-sprites.png"
-file "images/misc/input-bg.png"
-file "images/misc/modal-gloss.png"
-file "images/misc/table-sorter.png"
-file "images/orbit/bullets.jpg"
-file "images/orbit/left-arrow.png"
-file "images/orbit/loading.gif"
-file "images/orbit/mask-black.png"
-file "images/orbit/pause-black.png"
-file "images/orbit/right-arrow.png"
-file "images/orbit/rotator-black.png"
-file "images/orbit/timer-black.png"
+image 'misc/button-gloss.png'
+image 'misc/button-overlay.png'
+image 'misc/custom-form-sprites.png'
+image 'misc/input-bg.png'
+image 'misc/modal-gloss.png'
+image 'misc/table-sorter.png'
+image 'orbit/bullets.jpg'
+image 'orbit/left-arrow.png'
+image 'orbit/loading.gif'
+image 'orbit/mask-black.png'
+image 'orbit/pause-black.png'
+image 'orbit/right-arrow.png'
+image 'orbit/rotator-black.png'
+image 'orbit/timer-black.png'
 
 # Javascrips
-file "javascripts/app.js"
-file "javascripts/forms.jquery.js"
-file "javascripts/jquery.customforms.js"
-file "javascripts/jquery.min.js" 
-file "javascripts/jquery.reveal.js"
-file "javascripts/jquery.orbit-1.3.0.js"
-file "javascripts/jquery.placeholder.min.js"
+javascript 'app.js'
+javascript 'forms.jquery.js'
+javascript 'jquery.customforms.js'
+javascript 'jquery.min.js'
+javascript 'jquery.reveal.js'
+javascript 'jquery.orbit-1.3.0.js'
+javascript 'jquery.placeholder.min.js'
 
 # Sass Files
-file "sass/app.sass"
-file "sass/forms.sass"
-file "sass/globals.sass"
-file "sass/ie.sass"
-file "sass/orbit.sass"
-file "sass/reveal.sass"
-file "sass/ui.sass"
-file "sass/mobile.sass"
-file "sass/grid.sass"
-file "sass/typography.sass"
+stylesheet 'app.sass', :media => 'screen'
+stylesheet 'forms.sass', :media => 'screen'
+stylesheet 'globals.sass', :media => 'screen'
+stylesheet 'ie.sass', :media => 'screen'
+stylesheet 'orbit.sass', :media => 'screen'
+stylesheet 'reveal.sass', :media => 'screen'
+stylesheet 'ui.sass', :media => 'screen'
+stylesheet 'mobile.sass', :media => 'screen'
+stylesheet 'grid.sass', :media => 'screen'
+stylesheet 'typography.sass', :media => 'screen'
 # Sass Mixins
-file "sass/includes/_mixins.sass"
-file "sass/includes/_settings.sass"
-file "sass/includes/_colors.sass"
+stylesheet '_mixins.sass', :media => 'screen'
+stylesheet '_settings.sass', :media => 'screen'
+stylesheet '_colors.sass', :media => 'screen'
 
 help %Q{
 
