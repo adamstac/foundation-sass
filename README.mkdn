@@ -1,16 +1,29 @@
 Foundation SASS
 ===============
 
-To create your first project, navigate to the foundation-sass folder in terminal and install the gem. You'll also need to make sure Compass is installed.
-    
+To create your first project, you'll need to have foundation-sass installed. Foundation SASS will also install the dependencies it needs to work properly.
+
+To install from Ruby Gems   
+-------------------------
+
 In Terminal:
 
-* sudo gem install compass
 * sudo gem install foundation-sass
 
 Next you'll create your first project.
 
+To install locally
+------------------
+
 In Terminal:
+
+* git clone git://github.com/bzerangue/foundation-sass.git
+* cd foundation-sass
+* sudo gem build foundation-sass.gemspec
+* sudo gem install foundation-sass-2.1.gem
+
+To create your first project
+----------------------------
 
 * cd path/to/where-you-want-new-project
 * .scss syntax
