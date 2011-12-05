@@ -13,7 +13,10 @@ Next you'll create your first project.
 In Terminal:
 
 * cd path/to/where-you-want-new-project
-* compass create my_project -r foundation-sass --using foundation-sass --force
+* .scss syntax
+* compass create my_project -r foundation-sass --using foundation-sass
+* .sass syntax
+* compass create my_project -r foundation-sass --using foundation-sass --syntax sass
     
 Now you should have a new project folder created with the foundation file structure, but with the awesome advantages of having all the css pre-processed with Sass.
 
