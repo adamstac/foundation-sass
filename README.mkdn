@@ -18,7 +18,7 @@ In Terminal:
 * `git clone git://github.com/zurb/foundation-sass.git`
 * `cd foundation-sass`
 * `sudo gem build foundation-sass.gemspec`
-* `sudo gem install foundation-sass-2.1.gem`
+* `sudo gem install foundation-sass-2.1.1.gem`
 
 To create your first project
 ----------------------------
