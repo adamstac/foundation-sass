@@ -1,21 +1,8 @@
-description 'foundation-sass'
+description 'Zurb Foundation'
 
 # Sass Files
-stylesheet 'sass/app.sass', :to => 'app.sass'
-stylesheet 'sass/forms.sass', :to => 'forms.sass'
-stylesheet 'sass/globals.sass', :to => 'globals.sass'
-stylesheet 'sass/ie.sass', :to => 'ie.sass'
-stylesheet 'sass/orbit.sass', :to => 'orbit.sass'
-stylesheet 'sass/reveal.sass', :to => 'reveal.sass'
-stylesheet 'sass/ui.sass', :to => 'ui.sass'
-stylesheet 'sass/mobile.sass', :to => 'mobile.sass'
-stylesheet 'sass/grid.sass', :to => 'grid.sass'
-stylesheet 'sass/typography.sass', :to => 'typography.sass'
-
-# Sass Mixins
-stylesheet 'sass/includes/_mixins.sass', :to => 'includes/_mixins.sass'
-stylesheet 'sass/includes/_settings.sass', :to => 'includes/_settings.sass'
-stylesheet 'sass/includes/_colors.sass', :to => 'includes/_colors.sass'
+stylesheet 'sass/app.sass', :to => 'app.sass', :media => "screen, projector, print"
+stylesheet 'sass/ie.sass', :to => 'ie.sass', :condition => "IE lt 9"
 
 # Javascrips
 javascript 'javascripts/app.js', :to => 'app.js'
