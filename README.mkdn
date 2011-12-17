@@ -24,8 +24,8 @@ To create your first project
 ----------------------------
 
 * `cd path/to/where-you-want-new-project`
-* .scss syntax: `compass create my_project -r foundation-sass --using foundation-sass --force`
-* .sass syntax: `compass create my_project -r foundation-sass --using foundation-sass --syntax sass --force`
+* .scss syntax: `compass create <my_project> -r foundation-sass --using zurb-foundation --force`
+* .sass syntax: `compass create <my_project> -r foundation-sass --using zurb-foundation --syntax sass --force`
     
 Now you should have a new project folder created with the foundation file structure, but with the awesome advantages of having all the css pre-processed with Sass.
 

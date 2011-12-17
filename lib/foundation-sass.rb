@@ -1,5 +1,5 @@
 require 'compass'
-Compass::Frameworks.register("foundation-sass", :path => "#{File.dirname(__FILE__)}/..")
+Compass::Frameworks.register("zurb-foundation", :path => File.join(File.dirname(__FILE__), ".."))
 
 module FoundationSass
   
