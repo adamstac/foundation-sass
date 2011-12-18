@@ -15,28 +15,28 @@
 
 .reveal-modal
   visibility: hidden
-  top: 100px
+  top: 100
   left: 50%
-  margin-left: -300px
-  width: 520px
-  background: #eee image-url('misc/modal-gloss.png') no-repeat -200px -80px
+  margin-left: -300
+  width: 520
+  background: #eee image-url('misc/modal-gloss.png') no-repeat -200 -80
   position: absolute
   z-index: 101
-  padding: 30px 40px 34px
+  padding: 30 40 34px
   +border-radius(5px)
-  +box-shadow(0 0 10px rgba(0,0,0,0.4))
+  +box-shadow(0 0 10 rgba(0,0,0,0.4))
   &.small
-    width: 200px
-    margin-left: -140px
+    width: 200
+    margin-left: -140
   &.medium
-    width: 400px
-    margin-left: -240px
+    width: 400
+    margin-left: -240
   &.large
-    width: 600px
-    margin-left: -340px
+    width: 600
+    margin-left: -340
   &.xlarge
-    width: 800px
-    margin-left: -440px
+    width: 800
+    margin-left: -440
   .close-reveal-modal
     +font-size(22)
     line-height: .5
@@ -47,9 +47,11 @@
     text-shadow: 0 -1px 1px rgba(0,0,0,0.6)
     font-weight: bold
     cursor: pointer
+  .row
+    min-width: 0
 
 /* Mobile */
-@media only screen and (device-width: 768px), (device-width: 800px)
+@media only screen and (device-width: 768px), (device-width: 800)
   .reveal-modal-bg
     position: absolute
   .reveal-modal
@@ -57,7 +59,7 @@
       width: 60%
       top: 30%
       left: 15%
-      margin-left: 0px
+      margin-left: 0
       padding: 5%
       height: auto
 @media only screen and (max-width: 767px)
@@ -68,7 +70,7 @@
       width: 80%
       top: 15%
       left: 5%
-      margin-left: 0px
+      margin-left: 0
       padding: 5%
       height: auto
 

@@ -53,21 +53,15 @@ small
   font-size: 60%
   line-height: inherit
 
-/* Mobile */
-@media only screen and (max-width: 767px)
-  body, p
-    +font-size(15)
-    line-height: 1.4
-
 /* Blockquotes */
 blockquote
-  line-height: 20px
+  line-height: 20
   color: #777
   margin: 0 0 18px
-  padding: 9px 20px 0 19px
+  padding: 9px 20 0 19px
   border-left: 1px solid #ddd
   p
-    line-height: 20px
+    line-height: 20
     color: #777
   cite
     display: block
@@ -96,6 +90,8 @@ abbr
   
 /* Print styles. Inlined to avoid required HTTP connection: */ /* www.phpied.com/delay-loading-your-print-css/ */
 /* Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com) */
+.print-only
+  display: block !important
 @media print
   *
     background: transparent !important
@@ -127,3 +123,7 @@ abbr
     widows: 3
   h2, h3
     page-break-after: avoid
+  .hide-on-print
+    display: none !important
+  .print-only
+    display: block !important

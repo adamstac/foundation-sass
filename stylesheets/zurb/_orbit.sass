@@ -5,8 +5,8 @@
 
 /*  PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY */                    
 #featured
-  width: 940px
-  height: 450px
+  width: 940
+  height: 450
   background: #000 image-url('orbit/loading.gif') no-repeat center center
   overflow: hidden
   &>img, &>div, &>a
@@ -23,7 +23,7 @@ div.orbit
   position: relative
   overflow: hidden
   &.with-bullets
-    margin-bottom: 40px
+    margin-bottom: 40
   &>img
     position: absolute
     top: 0
@@ -39,43 +39,43 @@ div.orbit
 /* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
 /* Timer */
 div.timer
-  width: 40px
-  height: 40px
+  width: 40
+  height: 40
   overflow: hidden
   position: absolute
-  top: 10px
-  right: 10px
+  top: 10
+  right: 10
   +opacity(0.6)
   cursor: pointer
   z-index: 1001
 span.rotator
   display: block
-  width: 40px
-  height: 40px
+  width: 40
+  height: 40
   position: absolute
   top: 0
-  left: -20px
+  left: -20
   background: image-url('orbit/rotator-black.png') no-repeat
   z-index: 3
   &.move
     left: 0
 span.mask
   display: block
-  width: 20px
-  height: 40px
+  width: 20
+  height: 40
   position: absolute
   top: 0
   right: 0
   z-index: 2
   overflow: hidden
   &.move
-    width: 40px
+    width: 40
     left: 0
     background: image-url('orbit/timer-black.png') repeat 0 0
 span.pause
   display: block
-  width: 40px
-  height: 40px
+  width: 40
+  height: 40
   position: absolute
   top: 0
   left: 0
@@ -83,7 +83,7 @@ span.pause
   z-index: 4
   +opacity(0)
   &.active
-    background: image-url('orbit/pause-black.png') no-repeat 0 -40px
+    background: image-url('orbit/pause-black.png') no-repeat 0 -40
 div.timer:hover span.pause, span.pause.active
   +opacity(1)
   
@@ -109,12 +109,12 @@ div.slider-nav
   display: block
   span
     width: 78px
-    height: 100px
+    height: 100
     text-indent: -99999px
     position: absolute
     z-index: 1000
     top: 50%
-    margin-top: -50px
+    margin-top: -50
     cursor: pointer
     &.right
       background: image-url('orbit/right-arrow.png')
@@ -128,9 +128,9 @@ div.slider-nav
   position: absolute
   z-index: 1000
   list-style: none
-  bottom: -40px
+  bottom: -40
   left: 50%
-  margin-left: -50px
+  margin-left: -50
   padding: 0
   li
     float: left
@@ -147,7 +147,7 @@ div.slider-nav
       background-position: -8px 0
     &.has-thumb
       background: none
-      width: 100px
+      width: 100
       height: 75px
     &.active
       &.has-thumb
