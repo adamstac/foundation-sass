@@ -1,4 +1,4 @@
-description 'Zurb Foundation'
+description 'ZURB-foundation Compass Gem'
 
 # Sass Files
 stylesheet 'sass/app.sass', :to => 'app.sass', :media => "screen, projector, print"
@@ -44,6 +44,6 @@ If you need help, email us at foundation@zurb.com or visit foundation.zurb.com"
 
 welcome_message %Q{
 
-Congratulations! You have installed ZURB Foundation!
+w00t! You're using ZURB Foundation, now go forth and rock 'n roll!
 
 }

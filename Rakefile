@@ -1,4 +1,4 @@
-require './lib/foundation-sass'
+require './lib/ZURB-foundation'
 
 namespace :gem do
 
@@ -9,7 +9,7 @@ namespace :gem do
  
   desc "Build and release the gem"
   task :release => :build do
-    system "gem push foundation-sass-#{FoundationSass::VERSION}.gem"
+    system "gem push ZURB-foundation-#{ZURBfoundation::VERSION}.gem"
   end
   
 end

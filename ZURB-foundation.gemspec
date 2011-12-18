@@ -1,15 +1,15 @@
-require './lib/foundation-sass'
+require './lib/ZURB-foundation'
 
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = FoundationSass::VERSION
-  s.date = FoundationSass::DATE
+  s.version = ZURBfoundation::VERSION
+  s.date = ZURBfoundation::DATE
 
   # Gem Details
-  s.name = "foundation-sass"
+  s.name = "ZURB-foundation"
   s.authors = ["ZURB"]
-  s.summary = %q{ZURB Foundation all Sassyfied}
-  s.description = %q{ZURB Foundation all Sassyfied for quickly jumping into foundation using SASS. }
+  s.summary = %q{ZURB Foundation ported over to work with the power of Compass.}
+  s.description = %q{ZURB Foundation ported over to work with the power of Compass.}
   s.email = "foundation@zurb.com"
   s.homepage = "http://foundation.zurb.com"
 

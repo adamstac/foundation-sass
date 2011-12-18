@@ -1,7 +1,7 @@
-Foundation SASS
-===============
+ZURB Foundation for Compass
+===========================
 
-To create your first project, you'll need to have foundation-sass installed. Foundation SASS will also install the dependencies it needs to work properly.
+To create your first project, you'll need to have the ZURB-foundation gem installed, this will include all the necessary dependencies.
 
 To install from Ruby Gems   
 -------------------------
