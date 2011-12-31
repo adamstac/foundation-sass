@@ -1,18 +1,27 @@
-@import includes/settings
-@import includes/mixins
-@import includes/colors
-/* CSS for jQuery Orbit Plugin 1.2.3 :: www.ZURB.com/playground :: Copyright 2010, ZURB :: Free to use under the MIT license. :: http://www.opensource.org/licenses/mit-license.php */
+// CSS for jQuery Orbit Plugin 1.2.3 - http://www.zurb.com/playground
+// Copyright 2010, ZURB - Free to use under the MIT license - http://www.opensource.org/licenses/mit-license.php
+//
+// Configure the slider ID by setting $orbit-slider-id
 
-/*  PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY */                    
-#featured
-  width: 940px
-  height: 450px
+// `Orbit Slider
+//----------------------------------------------------------------------------------------------------
+
+// Orbit slider mixin
+@mixin orbit-slider($width: 940px, $height: 450px)
+  width: $width
+  height: $height
   background: #000 image-url('orbit/loading.gif') no-repeat center center
   overflow: hidden
-  &>img, &>div, &>a
+  & > img, & > div, & > a
     display: none
 
-/* Container */
+@if $include-default-orbit-slider-id
+  ##{$orbit-slider-id}
+    @include orbit-slider()
+
+// `Orbit container
+//----------------------------------------------------------------------------------------------------
+
 div.orbit-wrapper
   width: 1px
   height: 1px
@@ -24,11 +33,11 @@ div.orbit
   overflow: hidden
   &.with-bullets
     margin-bottom: 40px
-  &>img
+  & > img
     position: absolute
     top: 0
     left: 0
-  &>a
+  & > a
     border: none
     position: absolute
     top: 0
@@ -36,8 +45,12 @@ div.orbit
     line-height: 0
     display: none
 
-/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
-/* Timer */
+// `Orbit timer
+//----------------------------------------------------------------------------------------------------
+//
+// If your slider only uses content or anchors, you're going to want to put the width and height
+// declarations on the .orbit > div and div.orbit > a tags in addition to just the .orbit-wrapper
+
 div.timer
   width: 40px
   height: 40px
@@ -86,8 +99,10 @@ span.pause
     background: image-url('orbit/pause-black.png') no-repeat 0 -40
 div.timer:hover span.pause, span.pause.active
   +opacity(1)
-  
-/* Captions */
+
+// `Orbit captions
+//----------------------------------------------------------------------------------------------------
+
 .orbit-caption
   display: none
   +HelveticaFontStack
@@ -103,8 +118,10 @@ div.timer:hover span.pause, span.pause.active
   right: 0
   bottom: 0
   width: 100%
-  
-/* Directional Nav */
+
+// `Directional Nav
+//----------------------------------------------------------------------------------------------------
+
 div.slider-nav
   display: block
   span
@@ -123,7 +140,9 @@ div.slider-nav
       background: image-url('orbit/left-arrow.png')
       left: 0
 
-/* Bullet Nav */
+// `Bullet Nav
+//----------------------------------------------------------------------------------------------------
+
 .orbit-bullets
   position: absolute
   z-index: 1000
@@ -152,5 +171,4 @@ div.slider-nav
     &.active
       &.has-thumb
         background-position: 0 0
-        border-top: solid 2px $black  
-    
+        border-top: solid 2px $black

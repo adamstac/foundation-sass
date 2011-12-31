@@ -1,9 +1,9 @@
-@import includes/settings
-@import includes/mixins
-@import includes/colors
-/* Mobile Grid Fixes */
+// `Mobile Grid Fixes
+//----------------------------------------------------------------------------------------------------
 
-/* Typography */
+// `Typography
+//----------------------------------------------------------------------------------------------------
+
 @media only screen and (max-width: 767px)
   h1
     +font-size(32)
@@ -27,9 +27,11 @@
     +font-size(15)
     line-height: 1.4
 
-/* Tablet screens */
-@media only screen and (device-width: 768px), (device-width: 800)
-  /* Currently unused */
+// `Tablet
+//----------------------------------------------------------------------------------------------------
+
+// Currently unused
+// @media only screen and (device-width: 768px), (device-width: 800)
 
 @media only screen and (max-width: 767px)
   body
@@ -62,7 +64,8 @@
   .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten, .offset-by-eleven, .centered
     margin-left: 0% !important
 
-/* Mobile 4-column Grid */
+// `Mobile 4-column Grid
+//----------------------------------------------------------------------------------------------------
 .row
   .phone-one.column:first-child, .phone-two.column:first-child, .phone-three.column:first-child, .phone-four.column:first-child, .phone-one.columns:first-child, .phone-two.columns:first-child, .phone-three.columns:first-child, .phone-four.columns:first-child
     margin-left: 0
@@ -80,10 +83,9 @@
     width: 73.9% !important
   .phone-four.columns
     width: 100% !important
-  
-  
 
-/* Block Grid */
+// `Block Grid
+//----------------------------------------------------------------------------------------------------
 @media only screen and (max-width: 767px)
   .block-grid.mobile
     margin-left: 0%
@@ -91,8 +93,9 @@
       float: none
       width: 100%
       margin-left: 0%
-  
-/* Mobile Visibility Affordances */
+
+// `Mobile Visibility Affordances
+//----------------------------------------------------------------------------------------------------
 .show-on-phones
   display: none !important
 .show-on-tablets
@@ -137,7 +140,12 @@
   .show-on-desktops
     display: none !important 
 
-/* Specific overrides for elements that require something other than display: block */
+// `Specific overrides
+//----------------------------------------------------------------------------------------------------
+
+//
+// For elements that require something other than display: block
+//
 
 table
   &.show-on-desktops
@@ -165,7 +173,9 @@ table
     &.show-on-phones
       display: block !important
 
-/* Forms */
+// `Forms
+//----------------------------------------------------------------------------------------------------
+
 @media only screen and (max-width: 767px)
   input.input-text, input.input-text.oversize, textarea, form.nice input.input-text, form.nice input.input-text.oversize, form.nice textarea
     display: block
@@ -180,7 +190,9 @@ table
   form.nice .small+.error, form.nice .medium+.error, form.nice .large+.error
     width: auto
 
-/* Buttons */
+// `Buttons
+//----------------------------------------------------------------------------------------------------
+
 @media only screen and (max-width: 767px)
   .button
     display: block
@@ -189,7 +201,9 @@ table
     padding-left: 0
     padding-right: 0
     
-/* Tabs */
+// `Tabs
+//----------------------------------------------------------------------------------------------------
+
 @media only screen and (max-width: 767px)
   dl.tabs.mobile, dl.nice.tabs.mobile
     width: auto
@@ -244,18 +258,18 @@ table
   dl.nice.contained.tabs.mobile dd a
     padding: 18px 20px
 
-  /* Nav Bar with Dropdowns */
+  // Nav Bar with Dropdowns
   .nav-bar
     height: auto
-    &>li
+    & > li
       float: none
       display: block
-      &>a
+      & > a
         text-align: left
         border-top: 1px solid #ddd
         border-right: none
       &.has-flyout
-        &>a
+        & > a
           &:after
             content: ""
             width: 0
@@ -265,10 +279,10 @@ table
             border-top: 4px solid #2a85e8
             display: block
       &:first-child
-        &>a
+        & > a
           border-top: none
       &:hover
-        &>a
+        & > a
           font-weight: bold
         ul
           position: relative
@@ -286,7 +300,9 @@ table
     p.last-child
       margin-bottom: 18px
   
-/* Video */
+// Video
+//----------------------------------------------------------------------------------------------------
+
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px)
   .video
     padding-top: 0

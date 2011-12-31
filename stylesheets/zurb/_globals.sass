@@ -1,15 +1,16 @@
-@import includes
-
-/* Artfully masterminded by ZURB */
-/* Table of Contents */
-/*  :: Reset & Standards */    
-/*  :: Links */                       
-/*  :: Lists */                       
-/*  :: Tables */                      
-/*  :: Misc */                        
+// Table of Contents:
+//
+// Eric Meyer's CSS reset
+// Clearfix
+// Body
+// Links
+// Lists
+// Tables
+// Misc
+//
                                                           
-/* Global Reset & Standards */
-/* Eric Meyer's CSS Reset :: http://meyerweb.com/eric/tools/css/reset/ :: v2.0 | 20110126 :: License: none (public domain) */
+// `Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset
+//----------------------------------------------------------------------------------------------------
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
   margin: 0 
@@ -19,8 +20,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline
 html
   font-size: 62.5%
-  
-/* HTML 5 display-role reset for older browsers */
+// HTML5 reset for older browsers
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
   display: block
 body
@@ -35,17 +35,37 @@ blockquote, q
 table
   border-collapse: collapse
   border-spacing: 0
-  
+
+// `Nicolas Gallagher's micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
+//----------------------------------------------------------------------------------------------------
+
+// For modern browsers
+.clearfix
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+// For IE 6/7 (triggers hasLayout)
+.clearfix
+  zoom: 1
+
+// `Base cascade
+//----------------------------------------------------------------------------------------------------
+
 body
-  background: #fff
-  +HelveticaFontStack
-  +font-size(13)
+  background: $body-background
+  font-family: $body-font-family
+  +font-size($body-font-size)
   +font-smoothing(antialiased)
-  line-height: 18px
-  color: #555
+  line-height: $body-line-height
+  color: $body-color
   position: relative
 
-/* Links */
+// `Links
+//----------------------------------------------------------------------------------------------------
+
 a
   color: $blue
   text-decoration: none
@@ -53,14 +73,16 @@ a
   &:hover
     color: lighten($blue, 10%)
   &:focus
-    color: #cc4714
+    color: $orange
     outline: none
     
 p
   a, a:visited
     line-height: inherit
 
-/* Lists */
+// `Lists
+//----------------------------------------------------------------------------------------------------
+
 ul, ol
   margin-bottom: 18px
 ul
@@ -80,7 +102,9 @@ li
 ul.large li
   line-height: 21px
   
-/* Tables */
+// `Tables
+//----------------------------------------------------------------------------------------------------
+
 table
   background: $white
   +border-radius(3px)
@@ -121,7 +145,9 @@ table
         &:last-child
           border-right: none
         
-/* Misc */
+// `Misc
+//----------------------------------------------------------------------------------------------------
+
 .left 
   float: left
 .right
@@ -129,4 +155,4 @@ table
 .hide
   display: none
 .highlight
-  background: #ff0
+  background: $yellow
