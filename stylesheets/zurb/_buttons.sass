@@ -14,11 +14,6 @@
   text-align: center
   text-decoration: none
 
-  // `Base hover state
-  &:hover, &:focus
-    background-color: darken($default-color, 5%)
-    color: #fff
-
   // `Nice button
   &.nice
     background-color: $default-color
@@ -30,7 +25,7 @@
     +transition-duration($button-transition-duration)
     +transition-timing-function(ease-in-out)
     
-    // `Nie button borders
+    // `Nice button borders
     &.red
       border: solid 1px darken($red, 7%)
     &.blue
@@ -41,7 +36,11 @@
     &.black
       border: solid 1px darken($black, 7%)
       
-  // `Colors and hover states
+  // `Button colors and hover states
+  // `Base hover state
+  &:hover, &:focus
+    background-color: darken($default-color, 5%)
+    color: #fff
   &.red
     background-color: $red
     &:hover, &:focus
@@ -67,7 +66,7 @@
   &.round
     +border-radius(1000px)
 
-  // `Layout
+  // `Button layout
   &.full-width
     width: 100%
     padding-left: 0 !important
@@ -77,7 +76,7 @@
     text-align: left
     text-indent: 12px
 
-  // `Sizes
+  // `Button sizes
   &.small
     +font-size(11)
     padding: 8px 20px 10px
@@ -90,7 +89,7 @@
     padding: 11px 48px 13px
     width: auto
 
-  // `Disabled state
+  // `Button disabled states
   &.disabled, &[disabled]
     opacity: 0.6
     cursor: default
